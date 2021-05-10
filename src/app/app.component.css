@@ -1,0 +1,151 @@
+.component-container {
+  height: 100%;
+  overflow: auto;
+  background-color: #000000;
+  font-family: sans-serif;
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+.vertical-bar-1 {
+  border-left: 2px solid #399ffe;
+  color: #ffffff;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+  background-color: #222222;
+  padding: 15px 10px;
+}
+
+.vertical-bar-2 {
+  flex: 100%;
+  border-left: 2px solid #399ffe;
+  color: #ffffff;
+  margin-left: 5px;
+  padding-left: 10px;
+}
+
+.sort-and-filter {
+  flex: 100%;
+  margin-top: 15px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.sort-and-filter select {
+  border: 1px solid #399ffe;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  padding: 5px;
+  margin-right: 20px;
+}
+
+.card {
+  flex: 0 47%;
+  background-color: #0f0f0f;
+  height: 150px;
+  padding: 16px;
+  color: #ffffff;
+  line-height: 20px;
+  margin: 5px 5px;
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-match-mode-date {
+  color: #717171;
+}
+
+.card-match-result-loss {
+  border: 2px solid #d60003;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  color: #d60003;
+  text-align: center;
+}
+
+.card-match-result-win {
+  border: 2px solid #58ccd4;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  color: #58ccd4;
+  text-align: center;
+}
+
+.card-match-stat-title {
+  flex: 33%;
+  color: #717171;
+  margin-right: 2px;
+  margin-top: 3.5em;
+}
+
+.card-match-stat-ratio {
+  flex: 33%;
+  color: #f5a624;
+  margin-right: 2px;
+}
+
+.card-match-stat-data {
+  flex: 33%;
+  color: #58ccd4;
+  margin-right: 2px;
+}
+
+.fade-divider {
+  height: 1px;
+  background: -webkit-linear-gradient(left, #808080, #171717);
+  margin-right: 2px;
+  flex: 33%;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .component-container {
+    font-size: 10px;
+  }
+
+  .card-container {
+    padding: 15px 5px;
+  }
+
+  .vertical-bar-1 {
+    width: 90%;
+  }
+
+  .card-container {
+    width: 90%;
+  }
+
+  .card {
+    flex: 100%;
+  }
+
+  .card-match-stat-title {
+    margin-top: 5.5em;
+  }
+
+  .sort-and-filter {
+    margin-right: 5px;
+  }
+
+  .sort-and-filter select {
+    width: 100%;
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+}
